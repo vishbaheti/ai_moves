@@ -1,26 +1,18 @@
-build_panel.ipynb         # merging ONS workbooks (12 files)      
-compute_exposure.py       # compute AI exposure index
-build_commute_matrix.py   # organise Census 2011 commute data (raw file: 752526794144824.csv)
-validate_index            # validate calculation for AI exposure 
-build_figure.py           # the figure embedded in the brief 
-validate_index.py         # the two robustness checks cited in the brief
-dashboard.py              # streamlit dashboard linked in the brief
-```
+## File Descriptions
 
+* **build_panel.ipynb**: Merges 12 years of ONS business data (2014–2025) into one file.
+* **build_commute_matrix.py**: Processes raw 2011 Census data to create a commuting map.
+* **compute_exposure.py**: Calculates the AI exposure index for every district.
+* **validate_index.ipynb**: Runs robustness checks (Monte Carlo noise simulations).
+* **build_figure.py**: Creates the main analysis charts.
+* **dashboard.py**: Runs an interactive Streamlit dashboard.
+* **data_exploration.ipynb**: Basic exploration of data
 
-```
-ALL ONS workbooks: 
+## Required Data
 
-ukba01b2014.xls
-ukbaa01b2015.xls
-ukbaa01b2016.xls
-ukbusinessworkbook2017.xls
-ukbusinessworkbook2018.xls
-ukbusinessworkbook2019.xlsx
-ukbusinessworkbook2020.xlsx
-ukbusinessworkbook2021.xlsx
-ukbusinessworkbook2022.xlsx
-ukbusinessworkbook2023.xlsx
-ukbusinessworkbook2024.xlsx
-ukbusinessworkbook2025new.xlsx
-```
+### ONS Business Data
+Place these files in your data folder:
+* `ukba01b2014.xls` through `ukbusinessworkbook2025new.xlsx`
+
+### Census Data
+* `752526794144824.csv` (Raw 2011 Census commuting flows)
